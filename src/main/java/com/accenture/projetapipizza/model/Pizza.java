@@ -1,6 +1,8 @@
 package com.accenture.projetapipizza.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +17,7 @@ public class Pizza {
 
     private UUID id;
     private String  name;
+    @Enumerated(EnumType.STRING)
     private String size;
     private int tomate;
     private int mozarelle;
