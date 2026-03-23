@@ -18,12 +18,9 @@ public class Pizza {
     private UUID id;
     private String  name;
     @Enumerated(EnumType.STRING)
-    private String size;
+    private Size Size;
     private int tomate;
     private int mozarelle;
     private int basilic;
-
-
-
 
 }
