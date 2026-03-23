@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public record CustomerResponseDto(
 
-        UUID uuid,
+        UUID id,
         String name,
         String email
 ) {

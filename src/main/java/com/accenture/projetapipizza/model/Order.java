@@ -12,16 +12,17 @@ import java.util.UUID;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Customer {
+public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    private String name;
-    private String email;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @Enumerated(EnumType.STRING)
+    private OrderStatus orderStatus;
+
+    @ManyToOne
     @JoinColumn
-    private List<Order> orders;
+    private List<Pizza> pizzas;
 
 }
