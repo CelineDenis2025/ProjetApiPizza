@@ -1,0 +1,56 @@
+package com.accenture.projetapipizza.service;
+
+import com.accenture.projetapipizza.exception.PizzaException;
+import com.accenture.projetapipizza.mapper.PizzaMapper;
+import com.accenture.projetapipizza.model.Pizza;
+import com.accenture.projetapipizza.model.Size;
+import com.accenture.projetapipizza.repository.PizzaDao;
+import com.accenture.projetapipizza.service.dto.PizzaResponseDto;
+import com.accenture.projetapipizza.service.dto.PizzarequestDto;
+import com.accenture.projetapipizza.utils.Messages;
+import org.springframework.context.support.MessageSourceAccessor;
+import org.springframework.stereotype.Service;
+import java.util.HashMap;
+import java.util.Map;
+
+@Service
+public class PizzaServiceImpl implements PizzaService {
+
+    private final PizzaMapper pizzaMapper;
+    private final PizzaDao pizzaDao;
+    private final MessageSourceAccessor messages;
+
+    public PizzaServiceImpl(PizzaMapper pizzaMapper, PizzaDao pizzaDao, MessageSourceAccessor messages) {
+        this.pizzaMapper = pizzaMapper;
+        this.pizzaDao = pizzaDao;
+        this.messages = messages;
+    }
+
+
+    @Override
+    public PizzaResponseDto addPizza(PizzarequestDto pizzarequestDto) {
+        Map<Size, Double> size = new HashMap<>();
+        size.put(Size.SMALL, 1.0);
+        size.put(Size.MEDIUM, 1.5);
+        size.put(Size.LARGE, 2.0);
+        double multiplicateur = 1;
+        if (pizzarequestDto == null || pizzarequestDto.pricePizza() == null ||
+                pizzarequestDto.active() == null || pizzarequestDto.listIngedient() == null ||
+                pizzarequestDto.name() == null || pizzarequestDto.size() == null || pizzarequestDto.price() == 0)
+         //   throw new PizzaException("erreur");
+            throw new PizzaException(messages.getMessage(Messages.PIZZA_ELEMENT_NOT_VALID));
+        if (pizzarequestDto.size().equals("small") || pizzarequestDto.size().equals("medium") || pizzarequestDto.size().equals("large")){
+            switch (pizzarequestDto.size()) {
+                case "small" -> multiplicateur = size.get(Size.SMALL);
+                case "medium" -> multiplicateur = size.get(Size.MEDIUM);
+                case "large" -> multiplicateur = size.get(Size.LARGE);
+                }
+            Pizza pizza = pizzaMapper.toPizza(pizzarequestDto);
+            pizza.setPrice(pizza.getPrice() * multiplicateur);
+            Pizza pizzaSaved = pizzaDao.save(pizza);
+            return pizzaMapper.toPizzaResponseDto(pizzaSaved);
+        }else{
+            throw new PizzaException(messages.getMessage(Messages.PIZZA_ELEMENT_NOT_VALID));
+        }
+    }
+}
