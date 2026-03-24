@@ -8,7 +8,7 @@ public record PizzarequestDto(   String  name,
          Map<Size,Double> pricePizza,
          Map<String , Integer> listIngedient,
          Active active,
-         String size,
+         String sizePizza,
          double price
 
 ) {
