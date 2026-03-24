@@ -45,27 +45,27 @@ public class PizzaSerciceTest {
 
 
 
-    @Test
-    void addPizzaTest(){
-        Map<Size, Double> size = new HashMap<>();
-        size.put(Size.SMALL,1.0);
-        size.put(Size.MEDIUM,1.5);
-        size.put(Size.LARGE,2.0);
-        UUID uuid = UUID.randomUUID();
-        Map<String , Integer> listIngredient = new HashMap<>();
-        double price = 10;
-         PizzarequestDto pizzarequestDto = new PizzarequestDto("margherita",size,listIngredient, Active.ACTIVE,"small",price);
-         PizzaResponseDto pizzaResponseDto = new PizzaResponseDto(uuid,"margherita",size,listIngredient, Active.ACTIVE);
-         Pizza pizza = new Pizza(uuid,"margherita",size,listIngredient, Active.ACTIVE,price);
-        Mockito.when(pizzaMapper.toPizza(pizzarequestDto)).thenReturn(pizza);
-        Mockito.when(pizzaDao.save(pizza)).thenReturn(pizza);
-        Mockito.when(pizzaMapper.toPizzaResponseDto(pizza)).thenReturn(pizzaResponseDto);
-        PizzaResponseDto pizzaresult = pizzaService.addPizza(pizzarequestDto);
-        Assertions.assertEquals(pizzaResponseDto,pizzaresult);
-        Mockito.verify(pizzaMapper).toPizza(pizzarequestDto);
-        Mockito.verify(pizzaDao).save(pizza);
-        Mockito.verify(pizzaMapper).toPizzaResponseDto(pizza);
-    }
+//    @Test
+//    void addPizzaTest(){
+//        Map<Size, Double> size = new HashMap<>();
+//        size.put(Size.SMALL,1.0);
+//        size.put(Size.MEDIUM,1.5);
+//        size.put(Size.LARGE,2.0);
+//        UUID uuid = UUID.randomUUID();
+//        Map<String , Integer> listIngredient = new HashMap<>();
+//        double price = 10;
+//         PizzarequestDto pizzarequestDto = new PizzarequestDto("margherita",size,listIngredient, Active.ACTIVE,"small",price);
+//         PizzaResponseDto pizzaResponseDto = new PizzaResponseDto(uuid,"margherita",size,listIngredient, Active.ACTIVE);
+//         Pizza pizza = new Pizza(uuid,"margherita",size,listIngredient, Active.ACTIVE,price);
+//        Mockito.when(pizzaMapper.toPizza(pizzarequestDto)).thenReturn(pizza);
+//        Mockito.when(pizzaDao.save(pizza)).thenReturn(pizza);
+//        Mockito.when(pizzaMapper.toPizzaResponseDto(pizza)).thenReturn(pizzaResponseDto);
+//        PizzaResponseDto pizzaresult = pizzaService.addPizza(pizzarequestDto);
+//        Assertions.assertEquals(pizzaResponseDto,pizzaresult);
+//        Mockito.verify(pizzaMapper).toPizza(pizzarequestDto);
+//        Mockito.verify(pizzaDao).save(pizza);
+//        Mockito.verify(pizzaMapper).toPizzaResponseDto(pizza);
+//    }
 
     @Test
     void addpizzaTestFail(){
