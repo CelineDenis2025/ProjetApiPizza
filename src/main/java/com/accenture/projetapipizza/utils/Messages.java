@@ -7,4 +7,11 @@ public class Messages {
     public static final String CUSTOMER_NAME_NOT_NULL = "customer.name.not.null";
     public static final String CUSTOMER_EMAIL_NOT_NULL = "customer.email.not.null";
     public static final String CUSTOMER_EMAIL_NOT_VALID = "customer.email.not.valid";
+    public static final String PIZZA_ELEMENT_NOT_VALID ="pizza.element.not.valid";
+    public static final String PIZZA_NAME_NOT_VALID = "pizza.name.not.valid";
+    public static final String PIZZA_SIZE_NOT_VALID = "pizza.size.not.valid";
+    public static final String PIZZA_LISTINGREDIENT_NOT_VALID = "pizza.listIngredient.not.valid";
+    public static final String PIZZA_ACTIVE_NOT_VALID = "pizza.active.not.valid";
+    public static final String PIZZA_SIZECHOICE_NOT_VALID = "pizza.sizeChoice.not.valid";
+    public static final String PIZZA_PRICE_NOT_VALID="pizza.price.not.valid";
 }
