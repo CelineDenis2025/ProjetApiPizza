@@ -24,4 +24,8 @@ public class Customer {
     @JoinColumn
     private List<Order> orders;
 
+    public Customer(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
 }
