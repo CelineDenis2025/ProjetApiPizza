@@ -34,14 +34,13 @@ public class PizzaServiceImpl implements PizzaService {
         size.put(Size.MEDIUM, 1.5);
         size.put(Size.LARGE, 2.0);
         double multiplicateur = 1;
-        if (pizzarequestDto == null || pizzarequestDto.pricePizza() == null ||
+        if (pizzarequestDto == null || pizzarequestDto.sizePizzaPossible() == null ||
                 pizzarequestDto.active() == null || pizzarequestDto.listIngedient() == null ||
-                pizzarequestDto.name() == null || pizzarequestDto.sizePizza() == null || pizzarequestDto.price() == 0)
-         //   throw new PizzaException("erreur");
+                pizzarequestDto.name() == null || pizzarequestDto.name().isBlank() || pizzarequestDto.sizePizza() == null || pizzarequestDto.sizePizza().isBlank()|| pizzarequestDto.price() == 0)
             throw new PizzaException(messages.getMessage(Messages.PIZZA_ELEMENT_NOT_VALID));
         if (pizzarequestDto.sizePizza().equals("small") || pizzarequestDto.sizePizza().equals("medium") || pizzarequestDto.sizePizza().equals("large")){
             switch (pizzarequestDto.sizePizza()) {
-                case "small" -> multiplicateur = size.get(Size.SMALL);
+                case "small" -> multiplicateur = size.get(Size.SMALL);  // a verif la bonne implémentation lors du test d'intégration
                 case "medium" -> multiplicateur = size.get(Size.MEDIUM);
                 case "large" -> multiplicateur = size.get(Size.LARGE);
                 }
