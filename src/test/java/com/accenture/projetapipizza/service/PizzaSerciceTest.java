@@ -55,7 +55,7 @@ public class PizzaSerciceTest {
         Map<String , Integer> listIngredient = new HashMap<>();
         double price = 10;
          PizzarequestDto pizzarequestDto = new PizzarequestDto("margherita",size,listIngredient, Active.ACTIVE,"small",price);
-         PizzaResponseDto pizzaResponseDto = new PizzaResponseDto(uuid,"margherita",size,listIngredient, Active.ACTIVE);
+         PizzaResponseDto pizzaResponseDto = new PizzaResponseDto(uuid,"margherita",size,listIngredient,"small", Active.ACTIVE,price);
          Pizza pizza = new Pizza(uuid,"margherita",size,listIngredient, Active.ACTIVE,price);
         Mockito.when(pizzaMapper.toPizza(pizzarequestDto)).thenReturn(pizza);
         Mockito.when(pizzaDao.save(pizza)).thenReturn(pizza);
