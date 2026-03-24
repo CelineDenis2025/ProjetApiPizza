@@ -13,6 +13,8 @@ public record PizzaResponseDto(
          String  name,
          Map<Size,Double>pricePizza,
          Map<String , Integer>listIngedient,
-         Active active
+         String sizePizza,
+         Active active,
+         double price
 ) {
 }
