@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/customers")
 public interface CustomerApi {
 
-    @Operation(summary = "Add a new customer")
-    @ApiResponse(responseCode = "201", description = "Created customer")
-    @ApiResponse(responseCode = "400", description = "Invalid request",
-    content = @Content(schema = @Schema(implementation = Error.class)))
+//    @Operation(summary = "Add a new customer")
+//    @ApiResponse(responseCode = "201", description = "Created customer")
+//    @ApiResponse(responseCode = "400", description = "Invalid request",
+//    content = @Content(schema = @Schema(implementation = Error.class)))
 
 }
