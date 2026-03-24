@@ -9,6 +9,10 @@ public class Messages {
     public static final String CUSTOMER_NAME_SAME_AS_EXPECTED = "customer.name.same.as.expected";
     public static final String CUSTOMER_EMAIL_NOT_NULL = "customer.email.not.null";
     public static final String CUSTOMER_EMAIL_NOT_VALID = "customer.email.not.valid";
+    public static final String CUSTOMER_EMAIL_SAME_AS_EXPECTED = "customer.email.same.as.expected";
+
+
+    // PIZZA
     public static final String PIZZA_ELEMENT_NOT_VALID ="pizza.element.not.valid";
     public static final String PIZZA_NAME_NOT_VALID = "pizza.name.not.valid";
     public static final String PIZZA_SIZE_NOT_VALID = "pizza.size.not.valid";
