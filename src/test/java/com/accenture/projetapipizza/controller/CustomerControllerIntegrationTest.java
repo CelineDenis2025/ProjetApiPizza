@@ -3,6 +3,7 @@ import com.accenture.projetapipizza.mapper.CustomerMapper;
 import com.accenture.projetapipizza.service.CustomerServiceImpl;
 import com.accenture.projetapipizza.service.dto.CustomerRequestDto;
 import com.accenture.projetapipizza.service.dto.CustomerResponseDto;
+import com.accenture.projetapipizza.service.dto.OrderResponseDto;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -16,6 +17,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import tools.jackson.databind.ObjectMapper;
 
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 import java.util.UUID;
 
 @WebMvcTest(controllers = CustomerController.class)
@@ -40,9 +42,10 @@ public class CustomerControllerIntegrationTest {
     void testPersistCustomerSuccess() throws Exception {
         String name = "John";
         String email = "john.doe@gmail.com";
+        List<OrderResponseDto> orders = List.of();
 
         CustomerRequestDto requestDto = new CustomerRequestDto(name, email);
-        CustomerResponseDto responseDto = new CustomerResponseDto(UUID.randomUUID(), name, email);
+        CustomerResponseDto responseDto = new CustomerResponseDto(UUID.randomUUID(), name, email, orders);
 
         Mockito.when(customerService.addCustomer(Mockito.any(CustomerRequestDto.class))).thenReturn(responseDto);
 
@@ -51,7 +54,6 @@ public class CustomerControllerIntegrationTest {
                 .characterEncoding(StandardCharsets.UTF_8)
                 .content(objectMapper.writeValueAsString(requestDto)))
                 .andExpect(MockMvcResultMatchers.status().isCreated());
-
     }
     
 }

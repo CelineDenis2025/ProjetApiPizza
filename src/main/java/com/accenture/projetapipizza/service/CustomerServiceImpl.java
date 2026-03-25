@@ -7,13 +7,11 @@ import com.accenture.projetapipizza.repository.CustomerDao;
 import com.accenture.projetapipizza.service.dto.CustomerRequestDto;
 import com.accenture.projetapipizza.service.dto.CustomerResponseDto;
 import com.accenture.projetapipizza.utils.Messages;
-import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
-
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service
@@ -30,30 +28,29 @@ public class CustomerServiceImpl implements CustomerService {
     /** {@inheritDoc} */
     @Override
     public CustomerResponseDto addCustomer(CustomerRequestDto customerRequestDto) {
-        log.info("Validating and creating customer: '{}'", customerRequestDto.name());
         verify(customerRequestDto);
+        log.info("Validating and creating customer: '{}'", customerRequestDto.name());
         Customer saved = customerDao.save(customerMapper.toCustomer(customerRequestDto));
         log.info("Customer '{}' successfully created with id={}", saved.getName(), saved.getId());
         return customerMapper.toCustomerResponseDto(saved);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     public void verify(CustomerRequestDto customerRequestDto) {
         if (customerRequestDto == null) {
             log.warn("Customer validation failed: request is null");
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_NOT_NULL));
         }
-
         if (customerRequestDto.name() == null) {
             log.warn("Customer validation failed: name is null");
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_NAME_NOT_NULL));
         }
-
         if (customerRequestDto.email() == null) {
             log.warn("Customer validation failed: email is null");
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_NULL));
         }
-
         if (!customerRequestDto.email().matches(REGEX_EMAIl)) {
             log.warn("Customer validation failed: invalid email '{}'", customerRequestDto.email());
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_VALID));
