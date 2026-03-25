@@ -9,9 +9,7 @@ public record PizzaResponseDto(
 
          UUID id,
          String  name,
-         Map<Size,Double>sizePizzaPossible,
          Map<String , Integer>listIngedient,
-         String sizePizza,
          String active,
          double price
 ) {

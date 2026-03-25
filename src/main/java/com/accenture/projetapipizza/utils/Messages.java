@@ -20,4 +20,8 @@ public class Messages {
     public static final String PIZZA_ACTIVE_NOT_VALID = "pizza.active.not.valid";
     public static final String PIZZA_SIZECHOICE_NOT_VALID = "pizza.sizeChoice.not.valid";
     public static final String PIZZA_PRICE_NOT_VALID="pizza.price.not.valid";
+    public static final String PIZZA_ADD_IS_VALID="pizza.add.is.valid";
+    public static final String PIZZA_IS_NOT_EXIST="pizza.is.not.exist";
+    public static final String PIZZA_DELETE_UUID_IS_NULL="pizza.delete.uuid.is.null";
+    public static final String PIZZA_DELETE="pizza.delete";
 }

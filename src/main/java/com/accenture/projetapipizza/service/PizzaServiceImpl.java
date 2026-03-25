@@ -8,10 +8,13 @@ import com.accenture.projetapipizza.repository.PizzaDao;
 import com.accenture.projetapipizza.service.dto.PizzaResponseDto;
 import com.accenture.projetapipizza.service.dto.PizzarequestDto;
 import com.accenture.projetapipizza.utils.Messages;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.stereotype.Service;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 @Service
 public class PizzaServiceImpl implements PizzaService {
@@ -34,8 +37,7 @@ public class PizzaServiceImpl implements PizzaService {
         size.put(Size.MEDIUM, 1.5);
         size.put(Size.LARGE, 2.0);
         double multiplicateur = 1;
-        if (pizzarequestDto == null || pizzarequestDto.sizePizzaPossible() == null ||
-                pizzarequestDto.active() == null || pizzarequestDto.listIngedient() == null ||
+        if (pizzarequestDto == null || pizzarequestDto.active() == null || pizzarequestDto.listIngedient() == null ||
                 pizzarequestDto.name() == null || pizzarequestDto.name().isBlank() || pizzarequestDto.sizePizza() == null || pizzarequestDto.sizePizza().isBlank()|| pizzarequestDto.price() == 0)
             throw new PizzaException(messages.getMessage(Messages.PIZZA_ELEMENT_NOT_VALID));
         if (pizzarequestDto.sizePizza().equals("small") || pizzarequestDto.sizePizza().equals("medium") || pizzarequestDto.sizePizza().equals("large")){
@@ -52,4 +54,22 @@ public class PizzaServiceImpl implements PizzaService {
             throw new PizzaException(messages.getMessage(Messages.PIZZA_ELEMENT_NOT_VALID));
         }
     }
+
+    @Override
+    public PizzaResponseDto deletePizza(UUID uuid) {
+        if(uuid == null)
+            throw new PizzaException(messages.getMessage(Messages.PIZZA_DELETE_UUID_IS_NULL));
+            Pizza pizzaInDb = pizzaDao.getReferenceById(uuid);
+            PizzaResponseDto pizzaResponseDto = pizzaMapper.toPizzaResponseDto(pizzaInDb);
+            pizzaDao.delete(pizzaInDb);
+            return pizzaResponseDto;
+    }
+
+    @Override
+    public List<PizzaResponseDto> findAll() {
+        List<Pizza> listPizza = pizzaDao.findAll();
+        return pizzaMapper.toListPizzaResponseDto(listPizza);
+    }
+
+
 }
