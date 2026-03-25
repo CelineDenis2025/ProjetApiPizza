@@ -6,6 +6,7 @@ import com.accenture.projetapipizza.model.Customer;
 import com.accenture.projetapipizza.repository.CustomerDao;
 import com.accenture.projetapipizza.service.dto.CustomerRequestDto;
 import com.accenture.projetapipizza.service.dto.CustomerResponseDto;
+import com.accenture.projetapipizza.service.dto.OrderResponseDto;
 import com.accenture.projetapipizza.utils.Messages;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,10 +18,9 @@ import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.MessageSourceAccessor;
-import org.springframework.validation.Validator;
 
+import java.util.List;
 import java.util.UUID;
 
 import static org.mockito.Mockito.mock;
@@ -46,30 +46,30 @@ public class CustomerServiceImplTest {
         customerService = new CustomerServiceImpl(customerDao, customerMapper, messages);
     }
 
-    // Test si customer == null
+
     @Test
     @DisplayName("Test when customer is null")
-    void addCustomerNotNull() {
-        Assertions.assertThrows(CustomerException.class, () -> customerService.addCustomer(null));
+    void addCustomerNull() {
+        Assertions.assertThrows(CustomerException.class,
+                () -> customerService.addCustomer(null));
     }
 
-    // Test si name == null
     @Test
     @DisplayName("Test when name is null")
-    void addCustomerNotNullName() {
+    void addCustomerNullName() {
         CustomerRequestDto dto = new CustomerRequestDto(null, "john.doe@gmail.fr");
-        Assertions.assertThrows(CustomerException.class, () -> customerService.addCustomer(dto));
+        Assertions.assertThrows(CustomerException.class,
+                () -> customerService.addCustomer(dto));
     }
 
-    // Test si email == null
     @Test
     @DisplayName("Test when email is null")
-    void addCustomerNotNullEmail() {
+    void addCustomerNullEmail() {
         CustomerRequestDto dto = new CustomerRequestDto("John", null);
-        Assertions.assertThrows(CustomerException.class, () -> customerService.addCustomer(dto));
+        Assertions.assertThrows(CustomerException.class,
+                () -> customerService.addCustomer(dto));
     }
 
-    // Test si email not valid
     @ParameterizedTest
     @ValueSource(strings = {
             "invalid",
@@ -79,11 +79,12 @@ public class CustomerServiceImplTest {
             "john@@gmail.com",
             "john@gmail..com"
     })
-    void invalidEmails_shouldFail(String email) {
+    @DisplayName("Test when email is invalid")
+    void addCustomerInvalidEmails(String email) {
         CustomerRequestDto dto = new CustomerRequestDto("John", email);
-        Assertions.assertThrows(CustomerException.class, () -> customerService.addCustomer(dto));
+        Assertions.assertThrows(CustomerException.class,
+                () -> customerService.addCustomer(dto));
     }
-
 
     @Test
     @DisplayName("Test when customer object is well peristed from valid inputs")
@@ -91,9 +92,10 @@ public class CustomerServiceImplTest {
         CustomerService spy = Mockito.spy(customerService);
         String name = "John";
         String email = "john.doe@gmail.com";
+        List<OrderResponseDto> orders = List.of();
 
         CustomerRequestDto dtoRequest = new CustomerRequestDto(name, email);
-        CustomerResponseDto returnResponse = new CustomerResponseDto(UUID.randomUUID(), name, email);
+        CustomerResponseDto returnResponse = new CustomerResponseDto(UUID.randomUUID(), name, email, orders);
         Customer customer = new Customer(name, email);
 
         Mockito.when(customerMapper.toCustomer(dtoRequest)).thenReturn(customer);
@@ -108,7 +110,8 @@ public class CustomerServiceImplTest {
                 () -> Assertions.assertNotNull(returnResponse.name(), messages.getMessage(Messages.CUSTOMER_NAME_NOT_NULL)),
                 () -> Assertions.assertNotNull(returnResponse.email(), messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_NULL)),
                 () -> Assertions.assertEquals(name, result.name(), messages.getMessage(Messages.CUSTOMER_NAME_SAME_AS_EXPECTED)),
-                () -> Assertions.assertEquals(email, result.email(), messages.getMessage(Messages.CUSTOMER_EMAIL_SAME_AS_EXPECTED))
+                () -> Assertions.assertEquals(email, result.email(), messages.getMessage(Messages.CUSTOMER_EMAIL_SAME_AS_EXPECTED)),
+                () -> Assertions.assertEquals(orders, result.orders(), messages.getMessage(Messages.CUSTOMER_LIST_ORDER_SAME_AS_EXPECTED))
         );
         Mockito.verify(spy, Mockito.times(1)).verify(Mockito.any(CustomerRequestDto.class));
     }

@@ -28,30 +28,29 @@ public class CustomerServiceImpl implements CustomerService {
     /** {@inheritDoc} */
     @Override
     public CustomerResponseDto addCustomer(CustomerRequestDto customerRequestDto) {
-        log.info("Validating and creating customer: '{}'", customerRequestDto.name());
         verify(customerRequestDto);
+        log.info("Validating and creating customer: '{}'", customerRequestDto.name());
         Customer saved = customerDao.save(customerMapper.toCustomer(customerRequestDto));
         log.info("Customer '{}' successfully created with id={}", saved.getName(), saved.getId());
         return customerMapper.toCustomerResponseDto(saved);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     public void verify(CustomerRequestDto customerRequestDto) {
         if (customerRequestDto == null) {
             log.warn("Customer validation failed: request is null");
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_NOT_NULL));
         }
-
         if (customerRequestDto.name() == null) {
             log.warn("Customer validation failed: name is null");
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_NAME_NOT_NULL));
         }
-
         if (customerRequestDto.email() == null) {
             log.warn("Customer validation failed: email is null");
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_NULL));
         }
-
         if (!customerRequestDto.email().matches(REGEX_EMAIl)) {
             log.warn("Customer validation failed: invalid email '{}'", customerRequestDto.email());
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_VALID));
