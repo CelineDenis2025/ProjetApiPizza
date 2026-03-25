@@ -7,13 +7,11 @@ import com.accenture.projetapipizza.repository.CustomerDao;
 import com.accenture.projetapipizza.service.dto.CustomerRequestDto;
 import com.accenture.projetapipizza.service.dto.CustomerResponseDto;
 import com.accenture.projetapipizza.utils.Messages;
-import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
-
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service

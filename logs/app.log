@@ -1234,3 +1234,123 @@ Action:
 
 Consider defining a bean of type 'com.accenture.projetapipizza.mapper.PizzaMapper' in your configuration.
 
+2026-03-24T16:21:48.813+01:00  INFO 6736 --- [Projet-API-Pizza] [main] .a.p.c.CustomerControllerIntegrationTest : Starting CustomerControllerIntegrationTest using Java 25.0.2 with PID 6736 (started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-24T16:21:48.817+01:00  INFO 6736 --- [Projet-API-Pizza] [main] .a.p.c.CustomerControllerIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T16:21:51.581+01:00  INFO 6736 --- [Projet-API-Pizza] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-24T16:21:51.582+01:00  INFO 6736 --- [Projet-API-Pizza] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-24T16:21:51.585+01:00  INFO 6736 --- [Projet-API-Pizza] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-03-24T16:21:51.616+01:00  INFO 6736 --- [Projet-API-Pizza] [main] .a.p.c.CustomerControllerIntegrationTest : Started CustomerControllerIntegrationTest in 3.298 seconds (process running for 5.156)
+2026-03-24T16:23:07.746+01:00  INFO 29204 --- [Projet-API-Pizza] [main] .a.p.c.CustomerControllerIntegrationTest : Starting CustomerControllerIntegrationTest using Java 25.0.2 with PID 29204 (started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-24T16:23:07.748+01:00  INFO 29204 --- [Projet-API-Pizza] [main] .a.p.c.CustomerControllerIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T16:23:10.194+01:00  INFO 29204 --- [Projet-API-Pizza] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-24T16:23:10.194+01:00  INFO 29204 --- [Projet-API-Pizza] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-24T16:23:10.197+01:00  INFO 29204 --- [Projet-API-Pizza] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-03-24T16:23:10.239+01:00  INFO 29204 --- [Projet-API-Pizza] [main] .a.p.c.CustomerControllerIntegrationTest : Started CustomerControllerIntegrationTest in 2.946 seconds (process running for 4.56)
+2026-03-24T16:23:28.197+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 10372 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-24T16:23:28.201+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T16:23:28.248+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-24T16:23:28.248+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-24T16:23:29.124+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-24T16:23:29.192+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2026-03-24T16:23:29.637+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-24T16:23:29.649+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-24T16:23:29.649+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-24T16:23:29.696+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1447 ms
+2026-03-24T16:23:29.835+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-24T16:23:30.024+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@608e3649
+2026-03-24T16:23:30.026+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-24T16:23:30.056+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-24T16:23:30.125+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-24T16:23:30.596+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-24T16:23:30.689+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-24T16:23:31.591+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-24T16:23:31.599+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T16:23:31.668+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-24T16:23:31.742+01:00  WARN 10372 --- [Projet-API-Pizza] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController' defined in file [C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes\com\accenture\projetapipizza\controller\CustomerController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customerServiceImpl' defined in file [C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes\com\accenture\projetapipizza\service\CustomerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2: No qualifying bean of type 'org.springframework.context.support.MessageSourceAccessor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-03-24T16:23:31.742+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T16:23:31.745+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-24T16:23:31.749+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-24T16:23:31.755+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-24T16:23:31.764+01:00  INFO 10372 --- [Projet-API-Pizza] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-24T16:23:31.779+01:00 ERROR 10372 --- [Projet-API-Pizza] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.accenture.projetapipizza.service.CustomerServiceImpl required a bean of type 'org.springframework.context.support.MessageSourceAccessor' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.context.support.MessageSourceAccessor' in your configuration.
+
+2026-03-24T16:24:22.610+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 27192 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-24T16:24:22.612+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T16:24:22.654+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-24T16:24:22.654+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-24T16:24:23.375+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-24T16:24:23.428+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2026-03-24T16:24:23.881+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-24T16:24:23.893+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-24T16:24:23.893+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-24T16:24:23.949+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1295 ms
+2026-03-24T16:24:24.080+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-24T16:24:24.223+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2252da3e
+2026-03-24T16:24:24.225+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-24T16:24:24.248+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-24T16:24:24.292+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-24T16:24:24.856+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-24T16:24:24.936+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-24T16:24:25.755+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-24T16:24:25.761+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T16:24:25.821+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-24T16:24:25.909+01:00  WARN 27192 --- [Projet-API-Pizza] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pizzaServiceImpl' defined in file [C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes\com\accenture\projetapipizza\service\PizzaServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.accenture.projetapipizza.mapper.PizzaMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-03-24T16:24:25.910+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T16:24:25.913+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-24T16:24:25.921+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-24T16:24:25.926+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-24T16:24:25.933+01:00  INFO 27192 --- [Projet-API-Pizza] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-24T16:24:25.949+01:00 ERROR 27192 --- [Projet-API-Pizza] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.accenture.projetapipizza.service.PizzaServiceImpl required a bean of type 'com.accenture.projetapipizza.mapper.PizzaMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.accenture.projetapipizza.mapper.PizzaMapper' in your configuration.
+
