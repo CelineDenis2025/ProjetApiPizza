@@ -26,11 +26,11 @@ public class Pizza {
     @ElementCollection
     @JoinTable(name = "listIngredient")
     private Map<String,Integer> listIngedient;  //test
-    private Active active;
+    private String active;
 
     private double price;
 
-    public Pizza(String name, Map<Size, Double> size, Map<String, Integer> listIngedient, Active active,double price) {
+    public Pizza(String name, Map<Size, Double> size, Map<String, Integer> listIngedient, String active,double price) {
         this.name = name;
         this.size = size;
         this.listIngedient = listIngedient;

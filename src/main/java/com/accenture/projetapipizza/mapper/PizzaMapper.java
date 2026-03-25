@@ -5,6 +5,8 @@ import com.accenture.projetapipizza.service.dto.PizzaResponseDto;
 import com.accenture.projetapipizza.service.dto.PizzarequestDto;
 import org.mapstruct.Mapper;
 
+import java.util.List;
+
 @Mapper(componentModel = "spring")
 public interface PizzaMapper {
 
@@ -13,5 +15,7 @@ public interface PizzaMapper {
     Pizza toPizza(PizzarequestDto pizzarequestDto);
 
     PizzaResponseDto toPizzaResponseDto(Pizza pizza);
+
+    List<PizzaResponseDto> toListPizzaResponseDto(List<Pizza> listPizza); // test
 
 }

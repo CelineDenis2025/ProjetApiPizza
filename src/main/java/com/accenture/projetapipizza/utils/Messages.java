@@ -32,4 +32,8 @@ public class Messages {
     public static final String ORDER_STATUS_NOT_NULL="order.status.not.null";
     public static final String ORDER_PIZZA_LIST_NOT_EMPTY="order.pizza.list.not.empty";
 
+    public static final String PIZZA_ADD_IS_VALID="pizza.add.is.valid";
+    public static final String PIZZA_IS_NOT_EXIST="pizza.is.not.exist";
+    public static final String PIZZA_DELETE_UUID_IS_NULL="pizza.delete.uuid.is.null";
+    public static final String PIZZA_DELETE="pizza.delete";
 }
