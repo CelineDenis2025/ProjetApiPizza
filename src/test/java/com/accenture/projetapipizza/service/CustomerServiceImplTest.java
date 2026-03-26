@@ -55,8 +55,7 @@ class CustomerServiceImplTest {
 
         Assertions.assertEquals(
                 messages.getMessage(Messages.CUSTOMER_NOT_NULL),
-                exception.getMessage()
-        );
+                exception.getMessage());
     }
 
     @Test
@@ -69,8 +68,7 @@ class CustomerServiceImplTest {
 
         Assertions.assertEquals(
                 messages.getMessage(Messages.CUSTOMER_NAME_NOT_NULL),
-                exception.getMessage()
-        );
+                exception.getMessage());
     }
 
     @Test
@@ -83,20 +81,12 @@ class CustomerServiceImplTest {
 
         Assertions.assertEquals(
                 messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_NULL),
-                exception.getMessage()
-        );
-
+                exception.getMessage());
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {
-            "invalid",
-            "john@",
-            "@gmail.com",
-            "john@gmail",
-            "john@@gmail.com",
-            "john@gmail..com"
-    })
+    @ValueSource(strings = {"invalid", "john@", "@gmail.com", "john@gmail",
+            "john@@gmail.com", "john@gmail..com"})
     @DisplayName("Test when email is invalid")
     void addCustomerInvalidEmails(String email) {
         CustomerRequestDto dto = new CustomerRequestDto("John", email);
@@ -106,8 +96,7 @@ class CustomerServiceImplTest {
 
         Assertions.assertEquals(
                 messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_VALID),
-                exception.getMessage()
-        );
+                exception.getMessage());
     }
 
     @Test

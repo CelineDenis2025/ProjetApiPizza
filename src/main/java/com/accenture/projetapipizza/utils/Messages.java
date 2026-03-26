@@ -50,6 +50,11 @@ public class Messages {
     public static final String ORDER_STATUS_SAME_AS_EXPECTED="order.status.same.as.expected";
     public static final String ORDER_PIZZA_NAME_SAME_AS_EXPECTED="order.pizza.name.same.as.expected";
     public static final String ORDER_PRICE_SAME_AS_EXPECTED="order.price.same.as.expected";
-
+    public static final String ORDER_BAD_REQUEST="order.bad.request";
+    public static final String ORDER_CREATED="order.created";
+    public static final String ORDER_DTO_RESPONSE_NOT_NULL="order.dto.response.not.null";
+    public static final String ORDER_RESPONSE_STATUS_MATCH_REQUEST_STATUS="order.response.status.match.request.status";
+    public static final String ORDER_RESPONSE_PIZZA_MATCH_REQUEST_PIZZA="order.response.pizza.match.request.pizza";
+    public static final String ORDER_RESPONSE_PRICE_MATCH_REQUEST_PRICE="order.response.price.match.request.price";
 
 }

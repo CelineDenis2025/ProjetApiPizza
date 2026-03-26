@@ -35,7 +35,7 @@ class CustomerControllerIntegrationTest {
     private ObjectMapper objectMapper;
 
     @MockitoBean
-    private CustomerMapper  customerMapper;
+    private CustomerMapper customerMapper;
 
     @Test
     @DisplayName("Test to persist customer into the posgres database")
