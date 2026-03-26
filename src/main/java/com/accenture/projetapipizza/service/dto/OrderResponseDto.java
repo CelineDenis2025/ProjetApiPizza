@@ -10,6 +10,6 @@ public record OrderResponseDto(
         UUID id,
         OrderStatus orderStatus,
         List<PizzaResponseDto> pizzas,
-        double price
+        double orderPrice
 ) {
 }

@@ -8,6 +8,11 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 import java.util.UUID;
 
+
+/**
+ * Represents a customer entity with basic personnal information
+ * and a list of associated orders
+ */
 @Entity
 @Data
 @NoArgsConstructor
@@ -18,6 +23,8 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String name;
+
+    @Column(unique = true)
     private String email;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
