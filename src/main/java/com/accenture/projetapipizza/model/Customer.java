@@ -8,6 +8,11 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 import java.util.UUID;
 
+
+/**
+ * Represents a customer entity with basic personnal information
+ * and a list of associated orders
+ */
 @Entity
 @Data
 @NoArgsConstructor
