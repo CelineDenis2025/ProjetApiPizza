@@ -38,7 +38,6 @@ public class Messages {
     public static final String PIZZA_DELETE_UUID_IS_NULL="pizza.delete.uuid.is.null";
     public static final String PIZZA_DELETE="pizza.delete";
 
-    public static final String PIZZA_FINDALL="pizza.findAll";
 
     // ORDER
     public static final String ORDER_NOT_NULL="order.not.null";
@@ -58,12 +57,4 @@ public class Messages {
     public static final String ORDER_RESPONSE_PIZZA_MATCH_REQUEST_PIZZA="order.response.pizza.match.request.pizza";
     public static final String ORDER_RESPONSE_PRICE_MATCH_REQUEST_PRICE="order.response.price.match.request.price";
 
-    public static final String PIZZA_ADD_IS_VALID="pizza.add.is.valid";
-    public static final String PIZZA_IS_NOT_EXIST="pizza.is.not.exist";
-    public static final String PIZZA_DELETE_UUID_IS_NULL="pizza.delete.uuid.is.null";
-    public static final String PIZZA_DELETE="pizza.delete";
-    public static final String PIZZA_BAD_REQUEST="pizza.bad.request";
-
-
-    public static final String ENTITY_NOT_FOUND_EXCEPTION="entity.not.found.exception";
 }
