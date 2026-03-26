@@ -2308,3 +2308,4 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2026-03-26T16:10:41.795+01:00  INFO 2208 --- [Projet-API-Pizza] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-03-26T16:10:41.800+01:00  INFO 2208 --- [Projet-API-Pizza] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-03-26T16:10:41.816+01:00  INFO 2208 --- [Projet-API-Pizza] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-26T16:35:20.075+01:00  WARN 31620 --- [Projet-API-Pizza] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s679ms350µs800ns).
