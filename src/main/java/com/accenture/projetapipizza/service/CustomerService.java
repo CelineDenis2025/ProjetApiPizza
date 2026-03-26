@@ -20,5 +20,5 @@ public interface CustomerService {
      * @param customerRequestDto the customer information to validate
      * @throws CustomerException if a field is missing or if the email is invalid
      */
-    void verify(CustomerRequestDto customerRequestDto);
+    void validateCustomerRequest(CustomerRequestDto customerRequestDto);
 }

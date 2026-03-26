@@ -22,13 +22,13 @@ public class CustomerServiceImpl implements CustomerService {
     private final CustomerDao customerDao;
     private final CustomerMapper customerMapper;
     private final MessageSourceAccessor messages;
-    private final String REGEX_EMAIl = "^(?!.*\\.\\.)(?!.*@.*@)[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
+    private static final String REGEX_EMAIL = "^(?!.*\\.\\.)(?!.*@.*@)[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
 
 
     /** {@inheritDoc} */
     @Override
     public CustomerResponseDto addCustomer(CustomerRequestDto customerRequestDto) {
-        verify(customerRequestDto);
+        validateCustomerRequest(customerRequestDto);
         log.info("Validating and creating customer: '{}'", customerRequestDto.name());
         Customer saved = customerDao.save(customerMapper.toCustomer(customerRequestDto));
         log.info("Customer '{}' successfully created with id={}", saved.getName(), saved.getId());
@@ -38,7 +38,7 @@ public class CustomerServiceImpl implements CustomerService {
     /**
      * {@inheritDoc}
      */
-    public void verify(CustomerRequestDto customerRequestDto) {
+    public void validateCustomerRequest(CustomerRequestDto customerRequestDto) {
         if (customerRequestDto == null) {
             log.warn("Customer validation failed: request is null");
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_NOT_NULL));
@@ -51,7 +51,7 @@ public class CustomerServiceImpl implements CustomerService {
             log.warn("Customer validation failed: email is null");
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_NULL));
         }
-        if (!customerRequestDto.email().matches(REGEX_EMAIl)) {
+        if (!customerRequestDto.email().matches(REGEX_EMAIL)) {
             log.warn("Customer validation failed: invalid email '{}'", customerRequestDto.email());
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_VALID));
         }

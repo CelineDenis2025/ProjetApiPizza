@@ -28,7 +28,7 @@ public class Order {
     private OrderStatus orderStatus;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn
+    @JoinColumn(name = "order_id")
     private List<Pizza> pizzas;
 
     @ManyToOne

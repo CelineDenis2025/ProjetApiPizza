@@ -26,7 +26,7 @@ import java.util.UUID;
 import static org.mockito.Mockito.mock;
 
 @ExtendWith(MockitoExtension.class)
-public class CustomerServiceImplTest {
+class CustomerServiceImplTest {
 
     @Mock
     private CustomerDao customerDao;
@@ -156,7 +156,7 @@ public class CustomerServiceImplTest {
                 () -> Assertions.assertEquals(email, result.email(), messages.getMessage(Messages.CUSTOMER_EMAIL_SAME_AS_EXPECTED)),
                 () -> Assertions.assertEquals(orders, result.orders(), messages.getMessage(Messages.CUSTOMER_LIST_ORDER_SAME_AS_EXPECTED))
         );
-        Mockito.verify(spy, Mockito.times(1)).verify(Mockito.any(CustomerRequestDto.class));
+        Mockito.verify(spy, Mockito.times(1)).validateCustomerRequest(Mockito.any(CustomerRequestDto.class));
     }
 
 

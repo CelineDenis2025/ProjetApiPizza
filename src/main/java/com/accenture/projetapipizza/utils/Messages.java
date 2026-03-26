@@ -2,6 +2,11 @@ package com.accenture.projetapipizza.utils;
 
 public class Messages {
 
+    private Messages() {
+        throw new IllegalStateException("Utility class");
+    }
+
+
     // CUSTOMER
     public static final String CUSTOMER_NOT_NULL = "customer.not.null";
     public static final String CUSTOMER_ID_NOT_NULL = "customer.id.not.null";
@@ -35,10 +40,16 @@ public class Messages {
 
 
     // ORDER
+    public static final String ORDER_NOT_NULL="order.not.null";
     public static final String ORDER_STATUS_NOT_NULL="order.status.not.null";
     public static final String ORDER_LIST_PIZZA_NAME_NOT_EMPTY="order.list.pizza.name.not.empty";
     public static final String ORDER_CUSTOMER_EMAIL_NOT_NULL="order.customer.email.not.null";
-
+    public static final String ORDER_ID_NOT_NULL="order.id.not.null";
+    public static final String ORDER_PRICE_NOT_NULL="order.price.not.null";
+    public static final String ORDER_PIZZAS_NOT_NULL="order.pizzas.not.null";
+    public static final String ORDER_STATUS_SAME_AS_EXPECTED="order.status.same.as.expected";
+    public static final String ORDER_PIZZA_NAME_SAME_AS_EXPECTED="order.pizza.name.same.as.expected";
+    public static final String ORDER_PRICE_SAME_AS_EXPECTED="order.price.same.as.expected";
 
 
 }

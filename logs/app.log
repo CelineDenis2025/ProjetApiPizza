@@ -12455,3 +12455,958 @@ Consider defining a bean of type 'com.accenture.projetapipizza.service.CustomerS
 2026-03-26T10:17:50.171+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
 2026-03-26T10:17:50.171+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
 2026-03-26T10:17:50.172+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T10:50:13.377+01:00  WARN 16276 --- [Projet-API-Pizza] [HikariPool-4:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=14m53s425ms384µs200ns).
+2026-03-26T10:52:03.359+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 6 class path changes (6 additions, 0 deletions, 0 modifications)
+2026-03-26T10:52:03.362+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T10:52:03.369+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T10:52:03.373+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T10:52:03.375+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-03-26T10:52:03.385+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-03-26T10:52:03.580+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T10:52:03.580+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T10:52:05.157+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T10:52:05.188+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2026-03-26T10:52:05.332+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T10:52:05.334+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T10:52:05.335+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T10:52:05.406+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1821 ms
+2026-03-26T10:52:05.516+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T10:52:05.589+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T10:52:05.591+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-03-26T10:52:05.635+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@c5ff312
+2026-03-26T10:52:05.636+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-03-26T10:52:05.668+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T10:52:06.023+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T10:52:06.101+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T10:52:06.416+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T10:52:06.724+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T10:52:06.765+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T10:52:06.775+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 3.261 seconds (process running for 5718.136)
+2026-03-26T10:52:06.776+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T10:52:06.776+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T10:52:06.778+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:11:08.296+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
+2026-03-26T11:11:08.300+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-15] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:11:08.315+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:11:08.321+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:11:08.324+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-03-26T11:11:08.331+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-03-26T11:11:08.553+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:11:08.553+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:11:10.092+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:11:10.129+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2026-03-26T11:11:10.281+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:11:10.284+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:11:10.284+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:11:10.342+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1782 ms
+2026-03-26T11:11:10.394+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:11:10.463+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:11:10.467+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-03-26T11:11:10.538+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@65be5b36
+2026-03-26T11:11:10.538+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-03-26T11:11:10.574+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:11:10.730+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:11:10.829+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:11:11.004+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:11:11.240+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:11:11.266+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:11:11.271+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 2.814 seconds (process running for 6862.635)
+2026-03-26T11:11:11.273+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:11:11.273+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:11:11.274+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:11:24.861+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2026-03-26T11:11:24.863+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-19] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:11:24.873+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:11:24.876+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:11:24.877+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-03-26T11:11:24.882+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-03-26T11:11:24.980+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:11:24.981+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:11:25.296+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:11:25.318+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:11:25.395+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:11:25.396+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:11:25.396+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:11:25.433+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 450 ms
+2026-03-26T11:11:25.463+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:11:25.496+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:11:25.498+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-03-26T11:11:25.532+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@59dfbeaf
+2026-03-26T11:11:25.533+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-03-26T11:11:25.542+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:11:25.659+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:11:25.694+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:11:25.819+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:11:25.942+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:11:25.956+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:11:25.958+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 1.006 seconds (process running for 6877.323)
+2026-03-26T11:11:25.959+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:11:25.960+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:11:25.961+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:12:38.475+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-03-26T11:12:38.477+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-23] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:12:38.485+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:12:38.487+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:12:38.488+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-03-26T11:12:38.495+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-03-26T11:12:38.586+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:12:38.586+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:12:38.778+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:12:38.823+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:12:38.898+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:12:38.899+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:12:38.900+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:12:38.932+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 344 ms
+2026-03-26T11:12:38.972+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:12:39.008+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:12:39.010+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-03-26T11:12:39.038+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@24c9f0e2
+2026-03-26T11:12:39.038+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-03-26T11:12:39.049+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:12:39.123+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:12:39.159+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:12:39.252+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:12:39.426+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:12:39.445+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:12:39.449+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.89 seconds (process running for 6950.817)
+2026-03-26T11:12:39.450+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:12:39.451+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:12:39.451+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:12:40.867+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-26T11:12:40.869+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-27] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:12:40.882+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:12:40.884+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:12:40.885+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-03-26T11:12:40.892+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2026-03-26T11:12:40.999+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:12:41.000+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:12:41.351+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:12:41.376+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:12:41.470+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:12:41.471+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:12:41.471+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:12:41.526+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 524 ms
+2026-03-26T11:12:41.594+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:12:41.641+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:12:41.642+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-03-26T11:12:41.687+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@18176e42
+2026-03-26T11:12:41.687+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-03-26T11:12:41.701+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:12:41.789+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:12:41.833+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:12:41.943+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:12:42.073+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:12:42.104+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:12:42.109+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 1.143 seconds (process running for 6953.477)
+2026-03-26T11:12:42.113+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:12:42.115+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:12:42.116+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:20:44.185+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-03-26T11:20:44.187+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-31] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:20:44.196+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:20:44.198+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:20:44.199+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-03-26T11:20:44.203+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2026-03-26T11:20:44.327+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:20:44.327+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:20:45.132+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:20:45.174+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:20:45.236+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:20:45.237+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:20:45.237+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:20:45.291+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 962 ms
+2026-03-26T11:20:45.337+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:20:45.363+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:20:45.364+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-03-26T11:20:45.390+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@43695432
+2026-03-26T11:20:45.390+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-03-26T11:20:45.400+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:20:45.450+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:20:45.471+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:20:45.574+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:20:45.696+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:20:45.708+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:20:45.710+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 1.427 seconds (process running for 7437.083)
+2026-03-26T11:20:45.711+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:20:45.711+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:20:45.712+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:20:47.131+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-26T11:20:47.133+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-35] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:20:47.142+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:20:47.143+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:20:47.144+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-03-26T11:20:47.152+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2026-03-26T11:20:47.232+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:20:47.232+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:20:47.444+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:20:47.459+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:20:47.511+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:20:47.511+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:20:47.511+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:20:47.540+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 305 ms
+2026-03-26T11:20:47.561+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:20:47.587+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:20:47.588+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-03-26T11:20:47.622+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection org.postgresql.jdbc.PgConnection@4b08bf1b
+2026-03-26T11:20:47.623+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-03-26T11:20:47.631+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:20:47.686+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:20:47.709+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:20:47.787+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:20:47.917+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:20:47.934+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:20:47.938+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.725 seconds (process running for 7439.31)
+2026-03-26T11:20:47.938+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:20:47.939+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:20:47.939+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:27:36.778+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-03-26T11:27:36.780+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-39] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:27:36.786+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:27:36.788+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:27:36.788+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-03-26T11:27:36.791+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2026-03-26T11:27:36.867+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:27:36.867+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:27:37.020+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:27:37.033+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:27:37.094+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:27:37.095+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:27:37.095+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:27:37.122+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 254 ms
+2026-03-26T11:27:37.156+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:27:37.182+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:27:37.183+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-03-26T11:27:37.206+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection org.postgresql.jdbc.PgConnection@680eb734
+2026-03-26T11:27:37.206+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-03-26T11:27:37.214+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:27:37.267+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:27:37.293+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:27:37.367+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:27:37.451+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:27:37.462+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:27:37.464+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.62 seconds (process running for 7848.839)
+2026-03-26T11:27:37.465+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:27:37.465+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:27:37.465+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:27:38.875+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-26T11:27:38.877+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-43] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:27:38.882+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:27:38.884+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:27:38.884+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-03-26T11:27:38.889+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2026-03-26T11:27:38.956+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:27:38.956+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:27:39.190+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:27:39.206+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:27:39.262+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:27:39.262+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:27:39.263+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:27:39.293+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 336 ms
+2026-03-26T11:27:39.323+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:27:39.354+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:27:39.355+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-03-26T11:27:39.378+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection org.postgresql.jdbc.PgConnection@3c5cf549
+2026-03-26T11:27:39.378+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-03-26T11:27:39.387+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:27:39.448+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:27:39.472+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:27:39.541+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:27:39.637+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:27:39.653+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:27:39.656+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.716 seconds (process running for 7851.03)
+2026-03-26T11:27:39.657+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:27:39.657+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:27:39.657+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:30:14.652+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-03-26T11:30:14.653+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-47] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:30:14.659+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:30:14.661+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:30:14.661+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2026-03-26T11:30:14.665+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2026-03-26T11:30:14.737+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:30:14.737+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:30:14.905+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:30:14.918+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:30:14.968+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:30:14.969+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:30:14.969+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:30:14.996+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 258 ms
+2026-03-26T11:30:15.020+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:30:15.044+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:30:15.045+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2026-03-26T11:30:15.082+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection org.postgresql.jdbc.PgConnection@44ab0de0
+2026-03-26T11:30:15.083+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2026-03-26T11:30:15.092+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:30:15.174+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:30:15.202+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:30:15.284+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:30:15.349+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:30:15.361+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:30:15.363+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.644 seconds (process running for 8006.737)
+2026-03-26T11:30:15.364+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:30:15.364+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:30:15.365+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:30:16.779+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-26T11:30:16.781+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-51] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:30:16.789+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:30:16.791+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:30:16.791+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2026-03-26T11:30:16.797+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2026-03-26T11:30:16.882+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:30:16.882+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:30:17.150+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:30:17.166+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:30:17.231+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:30:17.232+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:30:17.232+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:30:17.261+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 377 ms
+2026-03-26T11:30:17.288+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:30:17.329+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:30:17.331+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2026-03-26T11:30:17.371+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection org.postgresql.jdbc.PgConnection@73fa3af0
+2026-03-26T11:30:17.372+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2026-03-26T11:30:17.384+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:30:17.462+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:30:17.493+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:30:17.577+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:30:17.683+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:30:17.704+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:30:17.706+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.85 seconds (process running for 8009.08)
+2026-03-26T11:30:17.707+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:30:17.707+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:30:17.707+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:34:13.886+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2026-03-26T11:34:13.888+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-55] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:34:13.896+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:34:13.898+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:34:13.898+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2026-03-26T11:34:13.903+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2026-03-26T11:34:13.976+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:34:13.976+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:34:14.161+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:34:14.187+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:34:14.249+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:34:14.249+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:34:14.249+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:34:14.275+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 298 ms
+2026-03-26T11:34:14.293+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:34:14.319+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:34:14.320+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2026-03-26T11:34:14.359+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection org.postgresql.jdbc.PgConnection@6f9241f8
+2026-03-26T11:34:14.359+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2026-03-26T11:34:14.367+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:34:14.423+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:34:14.451+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:34:14.470+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerController': Resolution of declared constructors on bean Class [com.accenture.projetapipizza.controller.CustomerController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5c5842da] failed
+2026-03-26T11:34:14.470+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:34:14.471+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2026-03-26T11:34:14.515+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2026-03-26T11:34:14.516+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-26T11:34:14.519+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-26T11:34:14.521+01:00 ERROR 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerController': Resolution of declared constructors on bean Class [com.accenture.projetapipizza.controller.CustomerController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5c5842da] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.4.jar:4.0.4]
+	at com.accenture.projetapipizza.ProjetApiPizzaApplication.main(ProjetApiPizzaApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.4.jar:4.0.4]
+Caused by: java.lang.NoClassDefFoundError: com/accenture/projetapipizza/service/CustomerService
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:2985) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2354) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:363) ~[spring-beans-7.0.6.jar:7.0.6]
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.accenture.projetapipizza.service.CustomerService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:547) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.4.jar:4.0.4]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[na:na]
+	... 27 common frames omitted
+
+2026-03-26T11:34:15.970+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:34:15.970+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:34:16.187+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:34:16.200+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:34:16.244+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:34:16.245+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:34:16.245+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:34:16.272+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 300 ms
+2026-03-26T11:34:16.289+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:34:16.307+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:34:16.308+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2026-03-26T11:34:16.329+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection org.postgresql.jdbc.PgConnection@54c7450b
+2026-03-26T11:34:16.329+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2026-03-26T11:34:16.335+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:34:16.378+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:34:16.403+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:34:16.468+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:34:16.528+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:34:16.537+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:34:16.540+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.584 seconds (process running for 8247.914)
+2026-03-26T11:34:16.541+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:34:16.541+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:34:16.542+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:35:37.136+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-03-26T11:35:37.138+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-59] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:35:37.144+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:35:37.146+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:35:37.147+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2026-03-26T11:35:37.150+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2026-03-26T11:35:37.218+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:35:37.218+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:35:37.373+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:35:37.391+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:35:37.438+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:35:37.439+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:35:37.439+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:35:37.464+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 245 ms
+2026-03-26T11:35:37.491+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:35:37.528+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:35:37.530+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2026-03-26T11:35:37.551+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection org.postgresql.jdbc.PgConnection@145fc686
+2026-03-26T11:35:37.552+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2026-03-26T11:35:37.562+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:35:37.613+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:35:37.639+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:35:37.701+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:35:37.811+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:35:37.821+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:35:37.824+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.622 seconds (process running for 8329.198)
+2026-03-26T11:35:37.826+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:35:37.826+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:35:37.827+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:35:39.238+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-26T11:35:39.240+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-66] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:35:39.250+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:35:39.251+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-66] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:35:39.252+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2026-03-26T11:35:39.259+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2026-03-26T11:35:39.335+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:35:39.335+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:35:39.533+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:35:39.550+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:35:39.611+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:35:39.612+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:35:39.612+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:35:39.638+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 300 ms
+2026-03-26T11:35:39.666+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:35:39.700+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:35:39.701+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2026-03-26T11:35:39.722+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection org.postgresql.jdbc.PgConnection@70a76145
+2026-03-26T11:35:39.722+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2026-03-26T11:35:39.728+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:35:39.777+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:35:39.799+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:35:39.863+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:35:39.955+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:35:39.966+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:35:39.967+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.654 seconds (process running for 8331.342)
+2026-03-26T11:35:39.968+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:35:39.968+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:35:39.968+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:41:18.565+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-03-26T11:41:18.567+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-70] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:41:18.575+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:41:18.576+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-70] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:41:18.578+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-70] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2026-03-26T11:41:18.584+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-70] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2026-03-26T11:41:18.677+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:41:18.678+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:41:18.881+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:41:18.892+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:41:18.970+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:41:18.971+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:41:18.972+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:41:19.035+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 355 ms
+2026-03-26T11:41:19.116+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:41:19.147+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:41:19.148+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2026-03-26T11:41:19.174+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-20 - Added connection org.postgresql.jdbc.PgConnection@1ccd104c
+2026-03-26T11:41:19.174+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2026-03-26T11:41:19.182+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:41:19.254+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:41:19.280+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:41:19.423+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:41:19.606+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:41:19.623+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:41:19.628+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.978 seconds (process running for 8671.002)
+2026-03-26T11:41:19.629+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:41:19.629+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:41:19.630+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T11:41:21.053+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-26T11:41:21.055+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-74] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T11:41:21.062+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T11:41:21.064+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-74] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:41:21.066+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-74] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2026-03-26T11:41:21.071+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-74] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2026-03-26T11:41:21.189+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T11:41:21.189+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T11:41:21.485+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T11:41:21.515+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2026-03-26T11:41:21.628+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T11:41:21.629+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T11:41:21.629+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T11:41:21.682+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 490 ms
+2026-03-26T11:41:21.728+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T11:41:21.768+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T11:41:21.770+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2026-03-26T11:41:21.800+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Added connection org.postgresql.jdbc.PgConnection@4db72dd5
+2026-03-26T11:41:21.800+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2026-03-26T11:41:21.808+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T11:41:21.879+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T11:41:21.904+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T11:41:22.008+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T11:41:22.127+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T11:41:22.146+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T11:41:22.149+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 1.003 seconds (process running for 8673.524)
+2026-03-26T11:41:22.151+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T11:41:22.151+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T11:41:22.152+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T13:33:59.236+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 4 deletions, 1 modification)
+2026-03-26T13:33:59.245+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-78] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T13:33:59.257+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T13:33:59.267+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-78] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T13:33:59.269+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2026-03-26T13:33:59.281+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2026-03-26T13:33:59.485+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T13:33:59.486+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T13:34:00.847+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T13:34:00.871+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2026-03-26T13:34:00.993+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T13:34:00.997+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T13:34:00.998+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T13:34:01.032+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1538 ms
+2026-03-26T13:34:01.084+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T13:34:01.126+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T13:34:01.129+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2026-03-26T13:34:01.158+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Added connection org.postgresql.jdbc.PgConnection@15f55446
+2026-03-26T13:34:01.159+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2026-03-26T13:34:01.189+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T13:34:01.359+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T13:34:01.404+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T13:34:01.482+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController' defined in file [C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes\com\accenture\projetapipizza\controller\CustomerController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customerServiceImpl' defined in file [C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes\com\accenture\projetapipizza\service\CustomerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customerMapperImpl': Lookup method resolution failed
+2026-03-26T13:34:01.482+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T13:34:01.483+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2026-03-26T13:34:01.532+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+2026-03-26T13:34:01.533+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-26T13:34:01.537+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-26T13:34:01.540+01:00 ERROR 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController' defined in file [C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes\com\accenture\projetapipizza\controller\CustomerController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customerServiceImpl' defined in file [C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes\com\accenture\projetapipizza\service\CustomerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customerMapperImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.4.jar:4.0.4]
+	at com.accenture.projetapipizza.ProjetApiPizzaApplication.main(ProjetApiPizzaApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.4.jar:4.0.4]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerServiceImpl' defined in file [C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes\com\accenture\projetapipizza\service\CustomerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customerMapperImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1762) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.6.jar:7.0.6]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerMapperImpl': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:482) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:352) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1762) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.6.jar:7.0.6]
+	... 38 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.accenture.projetapipizza.mapper.CustomerMapperImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@117bd233]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:460) ~[spring-beans-7.0.6.jar:7.0.6]
+	... 52 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/accenture/projetapipizza/service/dto/OrderResponseDto
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3010) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2329) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-7.0.6.jar:7.0.6]
+	... 54 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.accenture.projetapipizza.service.dto.OrderResponseDto
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:547) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.4.jar:4.0.4]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[na:na]
+	... 58 common frames omitted
+
+2026-03-26T13:34:16.365+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T13:34:16.366+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T13:34:17.034+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T13:34:17.074+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2026-03-26T13:34:17.239+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T13:34:17.240+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T13:34:17.240+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T13:34:17.310+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 938 ms
+2026-03-26T13:34:17.381+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T13:34:17.469+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T13:34:17.472+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2026-03-26T13:34:17.534+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-23 - Added connection org.postgresql.jdbc.PgConnection@4b9ad9
+2026-03-26T13:34:17.535+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2026-03-26T13:34:17.556+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T13:34:17.957+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T13:34:18.056+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T13:34:18.437+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T13:34:18.890+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T13:34:18.939+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T13:34:18.946+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 2.648 seconds (process running for 15450.333)
+2026-03-26T13:34:18.948+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T13:34:18.948+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T13:34:18.951+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T13:42:04.446+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-03-26T13:42:04.449+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-82] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T13:42:04.458+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T13:42:04.461+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-82] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T13:42:04.463+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-82] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2026-03-26T13:42:04.466+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-82] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2026-03-26T13:42:04.554+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T13:42:04.555+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T13:42:04.725+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T13:42:04.741+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2026-03-26T13:42:04.816+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T13:42:04.817+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T13:42:04.817+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T13:42:04.844+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 287 ms
+2026-03-26T13:42:04.898+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T13:42:04.921+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T13:42:04.921+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Starting...
+2026-03-26T13:42:04.947+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-24 - Added connection org.postgresql.jdbc.PgConnection@11645226
+2026-03-26T13:42:04.947+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Start completed.
+2026-03-26T13:42:04.953+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T13:42:05.038+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T13:42:05.079+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T13:42:05.175+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T13:42:05.339+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T13:42:05.365+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T13:42:05.368+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.84 seconds (process running for 15916.756)
+2026-03-26T13:42:05.369+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T13:42:05.369+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T13:42:05.370+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-26T13:42:06.764+01:00  INFO 16276 --- [Projet-API-Pizza] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-26T13:42:06.765+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-89] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-26T13:42:06.771+01:00  INFO 16276 --- [Projet-API-Pizza] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-26T13:42:06.773+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-89] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T13:42:06.774+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-89] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2026-03-26T13:42:06.776+01:00  INFO 16276 --- [Projet-API-Pizza] [Thread-89] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.
+2026-03-26T13:42:06.857+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Starting ProjetApiPizzaApplication using Java 25.0.2 with PID 16276 (C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza\target\classes started by celine.denis in C:\Users\celine.denis\IdeaProjects\Projet-API-Pizza)
+2026-03-26T13:42:06.858+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T13:42:07.060+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T13:42:07.075+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2026-03-26T13:42:07.143+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9999 (http)
+2026-03-26T13:42:07.144+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T13:42:07.144+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-26T13:42:07.179+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 320 ms
+2026-03-26T13:42:07.207+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T13:42:07.226+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T13:42:07.227+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Starting...
+2026-03-26T13:42:07.255+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-25 - Added connection org.postgresql.jdbc.PgConnection@5fa80db1
+2026-03-26T13:42:07.255+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Start completed.
+2026-03-26T13:42:07.264+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: mydb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-26T13:42:07.376+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T13:42:07.404+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T13:42:07.490+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-26T13:42:07.557+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://127.0.0.1:5432/mydb'
+2026-03-26T13:42:07.567+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9999 (http) with context path '/'
+2026-03-26T13:42:07.570+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] c.a.p.ProjetApiPizzaApplication          : Started ProjetApiPizzaApplication in 0.735 seconds (process running for 15918.958)
+2026-03-26T13:42:07.571+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T13:42:07.571+01:00  WARN 16276 --- [Projet-API-Pizza] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T13:42:07.571+01:00  INFO 16276 --- [Projet-API-Pizza] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

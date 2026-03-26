@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.UUID;
 
 @WebMvcTest(controllers = CustomerController.class)
-public class CustomerControllerIntegrationTest {
+class CustomerControllerIntegrationTest {
 
     private static final String API_CUSTOMERS_ENDPOINT = "/customers";
 

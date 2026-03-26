@@ -1,7 +1,6 @@
 package com.accenture.projetapipizza.service.dto;
 
 import com.accenture.projetapipizza.utils.Messages;
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
 public record CustomerRequestDto(
