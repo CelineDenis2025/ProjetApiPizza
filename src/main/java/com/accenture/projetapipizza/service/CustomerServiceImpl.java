@@ -55,6 +55,10 @@ public class CustomerServiceImpl implements CustomerService {
             log.warn("Customer validation failed: invalid email '{}'", customerRequestDto.email());
             throw new CustomerException(messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_VALID));
         }
+        if (customerDao.existsByEmail(customerRequestDto.email())) {
+            log.warn("Customer validation failed: email '{}' already exists", customerRequestDto.email());
+            throw new CustomerException(messages.getMessage(Messages.CUSTOMER_EMAIL_ALREADY_EXISTS));
+        }
     }
 
 }

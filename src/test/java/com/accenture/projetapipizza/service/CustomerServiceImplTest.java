@@ -50,24 +50,42 @@ public class CustomerServiceImplTest {
     @Test
     @DisplayName("Test when customer is null")
     void addCustomerNull() {
-        Assertions.assertThrows(CustomerException.class,
+        CustomerException exception = Assertions.assertThrows(CustomerException.class,
                 () -> customerService.addCustomer(null));
+
+        Assertions.assertEquals(
+                messages.getMessage(Messages.CUSTOMER_NOT_NULL),
+                exception.getMessage()
+        );
     }
 
     @Test
     @DisplayName("Test when name is null")
     void addCustomerNullName() {
         CustomerRequestDto dto = new CustomerRequestDto(null, "john.doe@gmail.fr");
-        Assertions.assertThrows(CustomerException.class,
+
+        CustomerException exception = Assertions.assertThrows(CustomerException.class,
                 () -> customerService.addCustomer(dto));
+
+        Assertions.assertEquals(
+                messages.getMessage(Messages.CUSTOMER_NAME_NOT_NULL),
+                exception.getMessage()
+        );
     }
 
     @Test
     @DisplayName("Test when email is null")
     void addCustomerNullEmail() {
         CustomerRequestDto dto = new CustomerRequestDto("John", null);
-        Assertions.assertThrows(CustomerException.class,
+
+        CustomerException exception = Assertions.assertThrows(CustomerException.class,
                 () -> customerService.addCustomer(dto));
+
+        Assertions.assertEquals(
+                messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_NULL),
+                exception.getMessage()
+        );
+
     }
 
     @ParameterizedTest
@@ -82,9 +100,34 @@ public class CustomerServiceImplTest {
     @DisplayName("Test when email is invalid")
     void addCustomerInvalidEmails(String email) {
         CustomerRequestDto dto = new CustomerRequestDto("John", email);
-        Assertions.assertThrows(CustomerException.class,
+
+        CustomerException exception = Assertions.assertThrows(CustomerException.class,
                 () -> customerService.addCustomer(dto));
+
+        Assertions.assertEquals(
+                messages.getMessage(Messages.CUSTOMER_EMAIL_NOT_VALID),
+                exception.getMessage()
+        );
     }
+
+    @Test
+    @DisplayName("Should throw exception when email already exists")
+    void addCustomerEmailAlreadyExists() {
+        CustomerRequestDto dto = new CustomerRequestDto("John", "john@example.com");
+        Mockito.when(customerDao.existsByEmail("john@example.com"))
+                .thenReturn(true);
+
+        CustomerException exception = Assertions.assertThrows(
+                CustomerException.class,
+                () -> customerService.addCustomer(dto)
+        );
+
+        Assertions.assertEquals(
+                messages.getMessage(Messages.CUSTOMER_EMAIL_ALREADY_EXISTS),
+                exception.getMessage()
+        );
+    }
+
 
     @Test
     @DisplayName("Test when customer object is well peristed from valid inputs")

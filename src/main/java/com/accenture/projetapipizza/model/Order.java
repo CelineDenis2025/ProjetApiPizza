@@ -8,6 +8,11 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 import java.util.UUID;
 
+
+/**
+ * Represents an order containing its status, related pizzas,
+ * and the customer who placed it
+ */
 @Entity
 @Data
 @NoArgsConstructor
