@@ -11,6 +11,7 @@ public record PizzaResponseDto(
          String  name,
          Map<String , Integer>listIngedient,
          String active,
-         double price
+         double price,
+        String sizePizza // ajout element
 ) {
 }
