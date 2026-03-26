@@ -8,6 +8,11 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 import java.util.UUID;
 
+
+/**
+ * Represents an order containing its status, related pizzas,
+ * and the customer who placed it
+ */
 @Entity
 @Data
 @NoArgsConstructor
@@ -23,7 +28,7 @@ public class Order {
     private OrderStatus orderStatus;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn
+    @JoinColumn(name = "pizza_id")
     private List<Pizza> pizzas;
 
     @ManyToOne

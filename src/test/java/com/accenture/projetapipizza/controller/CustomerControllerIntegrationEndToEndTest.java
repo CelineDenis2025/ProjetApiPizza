@@ -20,7 +20,7 @@ import org.springframework.test.context.ActiveProfiles;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureTestRestTemplate
 @ActiveProfiles("test")
-public class CustomerControllerIntegrationEndToEndTest {
+class CustomerControllerIntegrationEndToEndTest {
 
     private static final String API_CUSTOMERS_ENDPOINT = "/customers";
 
@@ -37,7 +37,7 @@ public class CustomerControllerIntegrationEndToEndTest {
     private MessageSourceAccessor messages;
 
     @Test
-    @DisplayName("Create a Customer failed during Post endpoint because name and email are null")
+    @DisplayName("Create a Customer failed during POST endpoint because name and email are null")
     void testPostCustomerFail() {
         String name = null;
         String email = null;
@@ -51,7 +51,7 @@ public class CustomerControllerIntegrationEndToEndTest {
     }
 
     @Test
-    @DisplayName("Create a Customer failed during Post endpoint because name is null")
+    @DisplayName("Create a Customer failed during POST endpoint because name is null")
     void testPostCustomerNameNullFail() {
         String name = null;
         String email = "john.doe@gmail.com";
@@ -65,7 +65,7 @@ public class CustomerControllerIntegrationEndToEndTest {
     }
 
     @Test
-    @DisplayName("Create a Customer failed during Post endpoint because email is null")
+    @DisplayName("Create a Customer failed during POST endpoint because email is null")
     void testPostCustomerEmailNullFail() {
         String name = "John";
         String email = null;
@@ -79,7 +79,7 @@ public class CustomerControllerIntegrationEndToEndTest {
     }
 
     @Test
-    @DisplayName("Create a Customer failed during Post endpoint because email is not valid")
+    @DisplayName("Create a Customer failed during POST endpoint because email is not valid")
     void testPostCustomerEmailInvalidFail() {
         String name = "John";
         String email = "invalid-email";
@@ -93,7 +93,7 @@ public class CustomerControllerIntegrationEndToEndTest {
     }
 
     @Test
-    @DisplayName("Creates a Customer through Post endpoint")
+    @DisplayName("Creates a Customer through POST endpoint")
     void testPostCustomerSuccess() {
         String name = "John";
         String email = "john.doe@gmail.com";
@@ -109,7 +109,6 @@ public class CustomerControllerIntegrationEndToEndTest {
             Assertions.assertNotNull(responseDto, messages.getMessage(Messages.CUSTOMER_DTO_RESPONSE_NOT_NULL));
             Assertions.assertNotNull(responseDto.id(), messages.getMessage(Messages.CUSTOMER_ID_NOT_NULL));
             Assertions.assertEquals(name, responseDto.name(), messages.getMessage(Messages.CUSTOMER_RESPONSE_NAME_MATCH_REQUEST_NAME));
-            Assertions.assertEquals(email, responseDto.email(), messages.getMessage(Messages.CUSTOMER_RESPONSE_EMAIL_MATCH_REQUEST_EMAIL));
-        });
+            Assertions.assertEquals(email, responseDto.email(), messages.getMessage(Messages.CUSTOMER_RESPONSE_EMAIL_MATCH_REQUEST_EMAIL));});
     }
 }

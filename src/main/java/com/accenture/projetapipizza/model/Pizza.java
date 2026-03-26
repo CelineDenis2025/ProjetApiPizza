@@ -19,9 +19,9 @@ public class Pizza {
     private String  name;
 
 
-//    @ElementCollection
-//    @JoinTable(name = "sizePizza" )
-//    private Map<Size,Double> size;
+    @ElementCollection
+    @JoinTable(name = "sizePizza" )
+    private Map<Size,Double> size;
 
     @ElementCollection
     @JoinTable(name = "listIngredient")
