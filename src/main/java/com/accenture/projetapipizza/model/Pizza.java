@@ -19,9 +19,9 @@ public class Pizza {
     private String  name;
 
 
-    @ElementCollection
-    @JoinTable(name = "sizePizza" )
-    private Map<Size,Double> size;
+//    @ElementCollection
+//    @JoinTable(name = "sizePizza" )
+//    private Map<Size,Double> size;
 
     @ElementCollection
     @JoinTable(name = "listIngredient")
@@ -29,10 +29,10 @@ public class Pizza {
     private String active;
 
     private double price;
+    private String sizePizza; // test
 
-    public Pizza(String name, Map<Size, Double> size, Map<String, Integer> listIngedient, String active,double price) {
+    public Pizza(String name, Map<String, Integer> listIngedient, String active,double price) {
         this.name = name;
-        this.size = size;
         this.listIngedient = listIngedient;
         this.active = active;
         this.price = price;

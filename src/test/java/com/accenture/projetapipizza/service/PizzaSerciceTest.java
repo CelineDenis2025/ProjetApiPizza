@@ -9,6 +9,7 @@ import com.accenture.projetapipizza.service.dto.PizzaResponseDto;
 import com.accenture.projetapipizza.service.dto.PizzarequestDto;
 import com.accenture.projetapipizza.utils.Messages;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -39,6 +40,7 @@ public class PizzaSerciceTest {
 
 
     @Test
+    @DisplayName("test of failure in adding a pizza with a null name")
     void addPizzaTestNameFail(){
         Map<Size, Double> listSize = new HashMap<>();
         listSize.put(Size.SMALL,1.0);
@@ -53,6 +55,7 @@ public class PizzaSerciceTest {
 
 
     @Test
+    @DisplayName("test of failure of adding a pizza with a null ingredient list")
     void addPizzaTestListIngredientFail(){
         Map<Size, Double> listSize = new HashMap<>();
         listSize.put(Size.SMALL,1.0);
@@ -64,6 +67,7 @@ public class PizzaSerciceTest {
     }
 
     @Test
+    @DisplayName("fail test of adding a pizza with null active")
     void addPizzaTestActiveFail(){
         Map<Size, Double> listSize = new HashMap<>();
         listSize.put(Size.SMALL,1.0);
@@ -75,6 +79,7 @@ public class PizzaSerciceTest {
     }
 
     @Test
+    @DisplayName("fail test of adding a pizza with null size")
     void addPizzaTestSizePizzaFail(){
         Map<Size, Double> listSize = new HashMap<>();
         listSize.put(Size.SMALL,1.0);
@@ -87,6 +92,7 @@ public class PizzaSerciceTest {
     }
 
     @Test
+    @DisplayName("test of failure to add a pizza with null price")
     void addPizzaTestPriceFail(){
         Map<Size, Double> listSize = new HashMap<>();
         listSize.put(Size.SMALL,1.0);
@@ -99,6 +105,7 @@ public class PizzaSerciceTest {
 
 
     @Test
+    @DisplayName("test of adding a pizza")
     void addPizzaTest(){
         Map<Size, Double> listSize = new HashMap<>();
         listSize.put(Size.SMALL,1.0);
@@ -108,8 +115,8 @@ public class PizzaSerciceTest {
         Map<String , Integer> listIngredient = new HashMap<>();
         double price = 10;
          PizzarequestDto pizzarequestDto = new PizzarequestDto("margherita",listIngredient, "true","small",price);
-         PizzaResponseDto pizzaResponseDto = new PizzaResponseDto(uuid,"margherita",listIngredient,"small", price);
-         Pizza pizza = new Pizza(uuid,"margherita",listSize,listIngredient, "true",price);
+         PizzaResponseDto pizzaResponseDto = new PizzaResponseDto(uuid,"margherita",listIngredient,"small", price,"small");
+         Pizza pizza = new Pizza(uuid,"margherita",listIngredient, "true",price,"small");
         Mockito.when(pizzaMapper.toPizza(pizzarequestDto)).thenReturn(pizza);
         Mockito.when(pizzaDao.save(pizza)).thenReturn(pizza);
         Mockito.when(pizzaMapper.toPizzaResponseDto(pizza)).thenReturn(pizzaResponseDto);
@@ -121,6 +128,7 @@ public class PizzaSerciceTest {
     }
 
     @Test
+    @DisplayName("test of the failure to add a pizza")
     void addpizzaTestFail(){
         Map<Size, Double> listSize = new HashMap<>();
         listSize.put(Size.SMALL,1.0);
@@ -131,6 +139,7 @@ public class PizzaSerciceTest {
     }
 
     @Test
+    @DisplayName("test of the failure of deleting a pizza")
     void deletePizzaTestFail(){
         UUID uuid = null;
         Assertions.assertThrows(PizzaException.class,() -> pizzaService.deletePizza(uuid));
@@ -139,6 +148,7 @@ public class PizzaSerciceTest {
 
 
 @Test
+@DisplayName("test of the deletion of a pizza")
 void deletePizzaTest() {
     UUID uuid = UUID.randomUUID();
 
@@ -158,7 +168,8 @@ void deletePizzaTest() {
             "margherita",
             ingredients,
             "true",
-            10.0
+            10.0,
+            "small"
     );
 
     Mockito.when(pizzaDao.getReferenceById(uuid)).thenReturn(pizza);
@@ -176,6 +187,7 @@ void deletePizzaTest() {
 
 
     @Test
+    @DisplayName("test of the pizza pickup")
     void findAllPizzaTest() {
 
         UUID uuid1 = UUID.randomUUID();
@@ -186,15 +198,15 @@ void deletePizzaTest() {
         Map<String, Integer> listIngredient = new HashMap<>();
         listIngredient.put("cheese", 1);
 
-        Pizza pizza1 = new Pizza(uuid1, "margherita", listSize, listIngredient, "true", 10);
-        Pizza pizza2 = new Pizza(uuid2, "chorizo", listSize, listIngredient, "true", 10);
-        Pizza pizza3 = new Pizza(uuid3, "ananas", listSize, listIngredient, "true", 10);
+        Pizza pizza1 = new Pizza(uuid1, "margherita", listIngredient, "true", 10,"small");
+        Pizza pizza2 = new Pizza(uuid2, "chorizo", listIngredient, "true", 10,"small");
+        Pizza pizza3 = new Pizza(uuid3, "ananas",  listIngredient, "true", 10,"small");
 
         List<Pizza> pizzasFromDao = List.of(pizza1, pizza2, pizza3);
 
-        PizzaResponseDto dto1 = new PizzaResponseDto(uuid1, "margherita", listIngredient, "true", 10);
-        PizzaResponseDto dto2 = new PizzaResponseDto(uuid2, "chorizo", listIngredient, "true", 10);
-        PizzaResponseDto dto3 = new PizzaResponseDto(uuid3, "ananas", listIngredient, "true", 10);
+        PizzaResponseDto dto1 = new PizzaResponseDto(uuid1, "margherita", listIngredient, "true", 10,"small");
+        PizzaResponseDto dto2 = new PizzaResponseDto(uuid2, "chorizo", listIngredient, "true", 10,"small");
+        PizzaResponseDto dto3 = new PizzaResponseDto(uuid3, "ananas", listIngredient, "true", 10,"small");
 
         List<PizzaResponseDto> dtoList = List.of(dto1, dto2, dto3);
 

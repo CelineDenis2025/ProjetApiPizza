@@ -24,22 +24,25 @@ public class PizzaController {
     }
 
 
+
     @PostMapping("/pizza")
     public ResponseEntity<String> addPizza(@RequestBody PizzarequestDto pizzarequestDto){
         PizzaResponseDto pizzaResponseDto = pizzaService.addPizza(pizzarequestDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(messages.getMessage(Messages.PIZZA_ADD_IS_VALID)+" "+pizzaResponseDto);
     }
 
-    @DeleteMapping("/Pizza/{id}")
+
+    @DeleteMapping("/pizza/{id}")
     public ResponseEntity<String> deletePizza(@RequestHeader(name = "id")UUID uuid){
        PizzaResponseDto pizzaResponseDto = pizzaService.deletePizza(uuid);
        return ResponseEntity.status(HttpStatus.ACCEPTED).body(messages.getMessage(Messages.PIZZA_DELETE)+" "+pizzaResponseDto);
     }
 
+
     @GetMapping
-    public ResponseEntity<String> findAll(){
+    public ResponseEntity<List<PizzaResponseDto>> findAll(){
         List<PizzaResponseDto> listPizzaResponseDto = pizzaService.findAll();
-        return ResponseEntity.status(HttpStatus.OK).body(listPizzaResponseDto.toString());
+        return ResponseEntity.status(HttpStatus.OK).body(listPizzaResponseDto);
     }
 
 

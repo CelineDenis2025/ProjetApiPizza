@@ -26,7 +26,7 @@ public class Messages {
     public static final String PIZZA_ACTIVE_NOT_VALID = "pizza.active.not.valid";
     public static final String PIZZA_SIZECHOICE_NOT_VALID = "pizza.sizeChoice.not.valid";
     public static final String PIZZA_PRICE_NOT_VALID="pizza.price.not.valid";
-
+    public static final String PIZZA_FINDALL="pizza.findAll";
 
     // ORDER
     public static final String ORDER_STATUS_NOT_NULL="order.status.not.null";
@@ -36,4 +36,8 @@ public class Messages {
     public static final String PIZZA_IS_NOT_EXIST="pizza.is.not.exist";
     public static final String PIZZA_DELETE_UUID_IS_NULL="pizza.delete.uuid.is.null";
     public static final String PIZZA_DELETE="pizza.delete";
+    public static final String PIZZA_BAD_REQUEST="pizza.bad.request";
+
+
+    public static final String ENTITY_NOT_FOUND_EXCEPTION="entity.not.found.exception";
 }
